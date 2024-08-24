@@ -7,16 +7,16 @@ const Hero = () => {
         <section className="flex md:flex-row items-center py-8 text-white">
             <div className="flex flex-col items-center mt-6 md:mt-0">
                 <div className="flex flex-col items-center space-y-4">
-                    <Link href="#" className="text-white">
+                    <Link href="https://github.com/gausalmunirtushar" className="text-white">
                         <FaGithub size={20} />
                     </Link>
-                    <Link href="#" className="text-white">
+                    <Link href="https://www.linkedin.com/in/gausalmunirtushar" className="text-white">
                         <FaLinkedin size={20} />
                     </Link>
-                    <Link href="#" className="text-white">
+                    <Link href="https://medium.com/@gausalmunirtushar" className="text-white">
                         <FaMedium size={20} />
                     </Link>
-                    <Link href="#" className="text-white">
+                    <Link href="https://twitter.com/gausalmunir" className="text-white">
                         <FaTwitter size={20} />
                     </Link>
                 </div>
@@ -33,10 +33,10 @@ const Hero = () => {
                     Gaus Al Munir Tushar
                 </h2>
                 <p className="text-2xl mt-4 font-bold text-primary">
-                    Full Stack Developer
+                    Software Engineer
                 </p>
                 <p className="mt-2 text-gray-200">
-                    Web Developer <span className="text-primary">•</span> Programmer <span className="text-primary">•</span> Software Engineer
+                    Web Developer <span className="text-primary text-2xl">•</span> Full Stack Developer <span className="text-primary text-2xl">•</span> DevOps Practitioner
                 </p>
                 <div className="flex mt-6 space-x-4">
                     <button className="bg-primary text-white px-6 py-2 rounded">
