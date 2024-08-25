@@ -21,22 +21,22 @@ const Hero = () => {
                     </Link>
                 </div>
                 <div className="mt-2">
-                    <div className="w-1 h-16 bg-white mt-2 ml-12"></div>
-                    <div className="text-sm text-white uppercase bg-slate-700 tracking-wider -rotate-90 py-1 px-2 rounded mt-10">
+                    <div className="w-[3px] h-20 bg-white mt-2 ml-14"></div>
+                    <div className="text-sm text-white font-bold uppercase bg-tertiary tracking-wider -rotate-90 py-2 px-3 rounded mt-10">
                         Follow Me
                     </div>
                 </div>
             </div>
             <div className="flex flex-col items-start">
-                <h1 className="text-2xl font-bold text-primary">Hello! I am</h1>
+                <h1 className="text-xl font-semibold text-primary">Hello! I am</h1>
                 <h2 className="text-7xl font-extrabold mt-2">
                     Gaus Al Munir Tushar
                 </h2>
                 <p className="text-2xl mt-4 font-bold text-primary">
                     Software Engineer
                 </p>
-                <p className="mt-2 text-gray-200">
-                    Web Developer <span className="text-primary text-2xl">•</span> Full Stack Developer <span className="text-primary text-2xl">•</span> DevOps Practitioner
+                <p className=" text-gray-200">
+                    Full Stack Developer <span className="text-primary text-xl">•</span> JavaScript Stack <span className="text-primary text-xl">•</span> DevOps Practitioner
                 </p>
                 <div className="flex mt-6 space-x-4">
                     <button className="bg-primary text-white px-6 py-2 rounded">

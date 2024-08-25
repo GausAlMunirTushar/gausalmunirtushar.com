@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 export default function About() {
     return (
-        <div className="bg-gray-900 text-white min-h-screen flex flex-col justify-center items-center">
-            <div className="container mx-auto flex flex-col md:flex-row items-center px-6 md:px-4">
-                <div className="md:w-2/3">
-                    <p className="text-lg md:text-xl mb-8">
+        <div className=" text-white min-h-screen flex flex-col justify-center items-center">
+            <div className="container mx-auto flex flex-col md:flex-row items-center px-6 md:px-4 py-20">
+                <div className="md:w-2/3 ">
+                    <p className="text-lg mb-8 leading-[35px]">
                         {`Hello! I'm Gaus Al Munir Tushar, a passionate Software
                         Engineer. I develop web applications, mobile
                         applications, and desktop applications. My core skill is

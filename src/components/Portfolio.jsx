@@ -1,9 +1,10 @@
 'use client';
 import Image from 'next/image';
 import React, { useState } from 'react';
+import { FaGithub, FaLink } from 'react-icons/fa';
 
 const projects = {
-    web: [
+    'web app': [
         {
             title: 'Gradienta',
             description:
@@ -67,20 +68,20 @@ const projects = {
 };
 
 export default function Portfolio() {
-    const [activeTab, setActiveTab] = useState('web');
+    const [activeTab, setActiveTab] = useState('web app');
 
     return (
-        <section className="bg-gray-900 text-white py-12">
+        <section className=" text-white py-20">
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl font-semibold mb-8">Portfolio</h2>
-                <div className="flex space-x-4 mb-8 md:px-4">
+                <div className="flex space-x-4 mb-8">
                     {Object.keys(projects).map((category) => (
                         <button
                             key={category}
                             onClick={() => setActiveTab(category)}
-                            className={`px-4 py-2 rounded ${
+                            className={`px-4 py-2 rounded capitalize ${
                                 activeTab === category
-                                    ? 'bg-primary text-white '
+                                    ? 'bg-primary text-white'
                                     : 'border-2 border-primary text-white hover:bg-tertiary'
                             }`}
                         >
@@ -101,7 +102,7 @@ export default function Portfolio() {
                                     alt={project.title}
                                     className="w-full h-48 object-cover"
                                     width={500}
-                                    height={500}
+                                    height={300}
                                 />
                             )}
                             <div className="p-6">
@@ -124,14 +125,16 @@ export default function Portfolio() {
                                 <div className="flex items-center justify-between">
                                     <a
                                         href={project.github}
-                                        className="text-green-400"
+                                        className="flex items-center text-green-400"
                                     >
+                                        <FaGithub className="mr-2" />
                                         GitHub
                                     </a>
                                     <a
                                         href={project.live}
-                                        className="text-green-400"
+                                        className="flex items-center text-green-400"
                                     >
+                                        <FaLink className="mr-2" />
                                         Live Demo
                                     </a>
                                 </div>

@@ -143,7 +143,9 @@ const Skill = () => {
     return (
         <div className=" text-white p-6">
             {/* Category Navigation */}
-            <div className="flex space-x-4 mb-4 md:px-4">
+            <div className="container mx-auto px-4 py-16">
+            <h2 className="text-3xl font-semibold mb-8">Skills</h2>
+            <div className="flex space-x-4 mb-4">
                 {Object.keys(categories).map((category) => (
                     <button
                         key={category}
@@ -160,7 +162,7 @@ const Skill = () => {
             </div>
 
             {/* Skills Section */}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:px-4">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                 {categories[selectedCategory].map((skill, index) => (
                     <div
                         key={index}
@@ -182,6 +184,7 @@ const Skill = () => {
                         {/* <div className="text-green-500 font-bold">{skill.percentage}%</div> */}
                     </div>
                 ))}
+            </div>
             </div>
         </div>
     );

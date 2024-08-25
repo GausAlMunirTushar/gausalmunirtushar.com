@@ -4,6 +4,10 @@ const menu = [
         href: '#about',
     },
     {
+        name: "Experience",
+        href: '#experience',
+    },
+    {
         name: 'Skill',
         href: '#skill',
     },
@@ -23,7 +27,7 @@ const menu = [
 const Menu = () => {
     return (
         <nav>
-            <ul className="flex uppercase text-lg space-x-7">
+            <ul className="flex uppercase text-md space-x-7">
                 {menu.map((item, index) => (
                     <li key={index}>
                         <a
