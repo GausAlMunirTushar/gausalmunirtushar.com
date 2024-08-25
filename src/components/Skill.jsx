@@ -141,17 +141,17 @@ const Skill = () => {
     const [selectedCategory, setSelectedCategory] = useState('Web');
 
     return (
-        <div className="bg-gray-900 text-white p-6">
+        <div className=" text-white p-6">
             {/* Category Navigation */}
-            <div className="flex space-x-4 mb-4">
+            <div className="flex space-x-4 mb-4 md:px-4">
                 {Object.keys(categories).map((category) => (
                     <button
                         key={category}
                         onClick={() => setSelectedCategory(category)}
-                        className={`py-2 px-4 rounded-lg ${
+                        className={`py-2 px-4 rounded ${
                             selectedCategory === category
-                                ? 'bg-green-500 text-white'
-                                : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
+                                ? 'bg-primary text-white '
+                                : 'border-2 border-primary text-white hover:bg-tertiary'
                         }`}
                     >
                         {category}
@@ -160,7 +160,7 @@ const Skill = () => {
             </div>
 
             {/* Skills Section */}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:px-4">
                 {categories[selectedCategory].map((skill, index) => (
                     <div
                         key={index}
