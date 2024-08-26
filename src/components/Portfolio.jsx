@@ -38,10 +38,50 @@ const projects = {
             title: 'Frontend Project 1',
             description: 'Description for frontend project 1.',
             tags: ['react', 'redux', 'css'],
+            image: '/images/devops.webp',
             github: '#',
             live: '#',
         },
-        // Add more frontend projects as needed
+        {
+            title: 'Frontend Project 1',
+            description: 'Description for frontend project 1.',
+            tags: ['react', 'redux', 'css'],
+            image: '/images/devops.webp',
+            github: '#',
+            live: '#',
+        },
+        {
+            title: 'Frontend Project 1',
+            description: 'Description for frontend project 1.',
+            tags: ['react', 'redux', 'css'],
+            image: '/images/devops.webp',
+            github: '#',
+            live: '#',
+        },
+        {
+            title: 'Frontend Project 1',
+            description: 'Description for frontend project 1.',
+            tags: ['react', 'redux', 'css'],
+            image: '/images/devops.webp',
+            github: '#',
+            live: '#',
+        },
+        {
+            title: 'Frontend Project 1',
+            description: 'Description for frontend project 1.',
+            tags: ['react', 'redux', 'css'],
+            image: '/images/devops.webp',
+            github: '#',
+            live: '#',
+        },
+        {
+            title: 'Frontend Project 1',
+            description: 'Description for frontend project 1.',
+            tags: ['react', 'redux', 'css'],
+            image: '/images/devops.webp',
+            github: '#',
+            live: '#',
+        },
     ],
     backend: [
         {
@@ -52,9 +92,24 @@ const projects = {
             github: '#',
             live: '#',
         },
-        // Add more backend projects as needed
+        {
+            title: 'Backend Project 1',
+            description: 'Description for backend project 1.',
+            tags: ['node.js', 'express', 'mongodb'],
+            image: '/images/backend.jpg',
+            github: '#',
+            live: '#',
+        },
+        {
+            title: 'Backend Project 1',
+            description: 'Description for backend project 1.',
+            tags: ['node.js', 'express', 'mongodb'],
+            image: '/images/backend.jpg',
+            github: '#',
+            live: '#',
+        }
     ],
-    other: [
+    DevOps: [
         {
             title: 'Other Project 1',
             description: 'Description for other project 1.',
