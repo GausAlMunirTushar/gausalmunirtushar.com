@@ -23,7 +23,7 @@ const Footer = () => {
       </div>
       <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-3">
         <p className="text-gray-400 text-center">
-          &copy; {new Date().getFullYear()} Gaus Al Munir Tushar. All rights reserved.
+          &copy; {new Date().getFullYear()} Gaus Al Munir Tushar. All Rights Reserved.
         </p>
         <button
           id="scroll-to-top"

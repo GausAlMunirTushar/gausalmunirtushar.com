@@ -25,7 +25,7 @@ export default function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/api/message', formData);
+            const response = await axios.post('https://message-me-api.onrender.com/api/message', formData);
             setSuccess(response.data.message);
             setError('');
             setFormData({ name: '', email: '', message: '' }); // Reset form

@@ -23,6 +23,15 @@ import {
     SiRedis,
     SiLinux,
     SiKubernetes,
+    SiApachekafka,
+    SiNginx,
+    SiAnsible,
+    SiJenkins,
+    SiPrometheus,
+    SiTerraform,
+    SiGrafana,
+    SiElastic,
+    SiLogstash,
 } from 'react-icons/si';
 
 const Skill = () => {
@@ -110,32 +119,83 @@ const Skill = () => {
             },
         ],
         'Tools': [
-            {
-                name: 'Git',
-                percentage: 95,
-                icon: <FaGitAlt className="text-orange-500" />,
-            },
-            {
-                name: 'Docker',
-                percentage: 80,
-                icon: <FaDocker className="text-blue-500" />,
-            },
-            {
-                name: 'Linux',
-                percentage: 85,
-                icon: <SiLinux className="text-yellow-500" />,
-            },
-            {
-                name: 'Kubernetes',
-                percentage: 70,
-                icon: <SiKubernetes className="text-blue-500" />,
-            },
-            {
-                name: 'GitHub Actions',
-                percentage: 75,
-                icon: <FaGithubAlt className="text-black" />,
-            },
-        ],
+    {
+        name: 'Git',
+        percentage: 95,
+        icon: <FaGitAlt className="text-orange-500" />,
+    },
+    {
+        name: 'Docker',
+        percentage: 80,
+        icon: <FaDocker className="text-blue-500" />,
+    },
+    {
+        name: 'Linux',
+        percentage: 85,
+        icon: <SiLinux className="text-yellow-500" />,
+    },
+    {
+        name: 'Kubernetes',
+        percentage: 70,
+        icon: <SiKubernetes className="text-blue-500" />,
+    },
+    {
+        name: 'GitHub Actions',
+        percentage: 75,
+        icon: <FaGithubAlt className="text-black" />,
+    },
+    {
+        name: 'Nginx',
+        percentage: 75,
+        icon: <SiNginx className="text-green-500" />,
+    },
+    {
+        name: 'Ansible',
+        percentage: 70,
+        icon: <SiAnsible className="text-red-500" />,
+    },
+    {
+        name: 'Terraform',
+        percentage: 65,
+        icon: <SiTerraform className="text-purple-500" />,
+    },
+    {
+        name: 'Jenkins',
+        percentage: 70,
+        icon: <SiJenkins className="text-blue-600" />,
+    },
+    {
+        name: 'Prometheus',
+        percentage: 60,
+        icon: <SiPrometheus className="text-orange-600" />,
+    },
+    {
+        name: 'Grafana',
+        percentage: 65,
+        icon: <SiGrafana className="text-orange-500" />,
+    },
+    {
+        name: 'ElasticSearch',
+        percentage: 60,
+        icon: <SiElastic className="text-blue-400" />,
+    },
+    {
+        name: 'Logstash',
+        percentage: 55,
+        icon: <SiLogstash className="text-green-600" />,
+    },
+    {
+        name: 'Filebeat',
+        percentage: 55,
+        icon: <SiElastic className="text-blue-400" />,
+    },
+    {
+        name: 'Apache Kafka',
+        percentage: 60,
+        icon: <SiApachekafka className="text-black" />,
+    },
+],
+
     };
 
     const [selectedCategory, setSelectedCategory] = useState('Web');
