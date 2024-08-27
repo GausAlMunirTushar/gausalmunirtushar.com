@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.project-image {
+    overflow: hidden;
+    height: 12rem; /* Adjust height as needed */
+    position: relative;
+}
+
+.project-image img {
+    transition: transform 2.5s ease-in-out;
+    display: block;
+    transform: translateY(0); /* Start position */
+    height: auto;
+}
+
+.project-image:hover img {
+    transform: translateY(-50%); /* Scroll the image up on hover */
+}

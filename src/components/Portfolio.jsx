@@ -6,39 +6,47 @@ import { FaGithub, FaLink } from 'react-icons/fa';
 const projects = {
     'web app': [
         {
-            title: 'Gradienta',
+            title: 'Daktarbari',
             description:
                 'A Collection of free Multicolor CSS, JPG, PNG, SVG Gradients with a Gradienta Editor',
             tags: ['gatsby', 'netlify', 'ga', 'forestry'],
-            image: '/images/gradienta.jpg',
+            image: '/images/portfolio/daktarbari-2.png',
             github: '#',
             live: '#',
         },
         {
-            title: 'DevSonket',
+            title: 'Bloodhub',
             description:
                 'A Collection of Bengali Cheatsheets for developers, completely open-source',
             tags: ['gatsby', 'json', 'travis ci'],
-            image: '/images/js.png',
+            image: '/images/portfolio/bloodhub.png',
             github: '#',
             live: '#',
         },
         {
-            title: 'js.zonayed.me',
+            title: 'JobHuntly',
             description:
                 'Learn Practical use case of JavaScript in your everyday life, entirely in Bengali',
-            tags: ['gatsby', 'utterances', 'travis ci'],
-            image: '/images/js.png',
+            tags: ['Nodejs', 'Expressjs', 'MongoDB',],
+            image: '/images/portfolio/jobhuntly.png',
             github: '#',
             live: '#',
         },
     ],
     frontend: [
         {
-            title: 'Frontend Project 1',
-            description: 'Description for frontend project 1.',
+            title: 'Edushare',
+            description: 'We designed Connections Academy to give students all across the nation a tuition-free online public school that lets them learn.',
+            tags: ['react', 'nextjs', 'css', 'tailwindcss'],
+            image: '/images/portfolio/edushare-2.png',
+            github: '#',
+            live: '#',
+        },
+        {
+            title: 'Furniro',
+            description: 'Furniro is a sleek e-commerce site offering a variety of stylish furniture with easy navigation, detailed product pages, and secure checkout. ',
             tags: ['react', 'redux', 'css'],
-            image: '/images/devops.webp',
+            image: '/images/portfolio/furniro-2.png',
             github: '#',
             live: '#',
         },
@@ -46,75 +54,67 @@ const projects = {
             title: 'Frontend Project 1',
             description: 'Description for frontend project 1.',
             tags: ['react', 'redux', 'css'],
-            image: '/images/devops.webp',
+            image: '/images/portfolio/trustco.png',
             github: '#',
             live: '#',
         },
         {
-            title: 'Frontend Project 1',
-            description: 'Description for frontend project 1.',
-            tags: ['react', 'redux', 'css'],
-            image: '/images/devops.webp',
-            github: '#',
-            live: '#',
+            title: 'Personal Portfolio',
+            description: 'Personal Portfolio Landing Page.',
+            tags: ['react', 'redux', 'tailwidcss'],
+            image: '/images/portfolio/portfolio-landing-page-2.png',
+            github: 'https://github.com/GausAlMunirTushar/portfolio-landing-page',
+            live: 'https://tusharportfolio-landing-page.netlify.app/',
         },
         {
-            title: 'Frontend Project 1',
-            description: 'Description for frontend project 1.',
-            tags: ['react', 'redux', 'css'],
-            image: '/images/devops.webp',
-            github: '#',
-            live: '#',
+            title: 'Healthyme',
+            description: 'Personal Portfolio Landing Page.',
+            tags: ['react', 'redux', 'tailwidcss'],
+            image: '/images/portfolio/healthyme.png',
+            github: 'https://github.com/GausAlMunirTushar/portfolio-landing-page',
+            live: 'https://tusharportfolio-landing-page.netlify.app/',
         },
         {
-            title: 'Frontend Project 1',
-            description: 'Description for frontend project 1.',
-            tags: ['react', 'redux', 'css'],
-            image: '/images/devops.webp',
-            github: '#',
-            live: '#',
-        },
-        {
-            title: 'Frontend Project 1',
-            description: 'Description for frontend project 1.',
-            tags: ['react', 'redux', 'css'],
-            image: '/images/devops.webp',
-            github: '#',
-            live: '#',
+            title: 'Nutritionist',
+            description: 'nutritionist -  e commerce website.',
+            tags: ['react', 'redux', 'tailwidcss'],
+            image: '/images/portfolio/nutritionist.png',
+            github: 'https://github.com/GausAlMunirTushar/portfolio-landing-page',
+            live: 'https://tusharportfolio-landing-page.netlify.app/',
         },
     ],
     backend: [
         {
-            title: 'Backend Project 1',
-            description: 'Description for backend project 1.',
+            title: 'Blog Application API',
+            description: 'A Blog Application API backend facilitates secure user authentication, dynamic content management, and seamless CRUD operations with efficient database handling and RESTful architecture..',
             tags: ['node.js', 'express', 'mongodb'],
-            image: '/images/backend.jpg',
+            image: '/images/portfolio/blog-api.png',
             github: '#',
             live: '#',
         },
         {
-            title: 'Backend Project 1',
+            title: 'Messmonitor',
             description: 'Description for backend project 1.',
             tags: ['node.js', 'express', 'mongodb'],
-            image: '/images/backend.jpg',
+            image: '/images/portfolio/mess-monitor.png',
             github: '#',
             live: '#',
         },
         {
-            title: 'Backend Project 1',
+            title: 'Doit Expenses',
             description: 'Description for backend project 1.',
             tags: ['node.js', 'express', 'mongodb'],
-            image: '/images/backend.jpg',
+            image: '/images/portfolio/doit.png',
             github: '#',
             live: '#',
         }
     ],
-    DevOps: [
+    Others: [
         {
             title: 'Other Project 1',
             description: 'Description for other project 1.',
             tags: ['python', 'flask', 'sqlalchemy'],
-            image: '/images/devops.webp',
+            image: '/images/portfolio/pebisnis-2.png',
             github: '#',
             live: '#',
         },
@@ -152,13 +152,15 @@ export default function Portfolio() {
                             className="bg-gray-800 rounded-lg overflow-hidden shadow-lg"
                         >
                             {project.image && (
+                                <div className="project-image">
                                 <Image
                                     src={project.image}
                                     alt={project.title}
-                                    className="w-full h-48 object-cover"
+                                    className="w-full object-cover"
                                     width={500}
                                     height={300}
                                 />
+                            </div>
                             )}
                             <div className="p-6">
                                 <h3 className="text-xl font-semibold mb-2">
@@ -177,9 +179,10 @@ export default function Portfolio() {
                                         </span>
                                     ))}
                                 </div>
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-end justify-between">
                                     <a
                                         href={project.github}
+                                        target="_blank"
                                         className="flex items-center text-green-400"
                                     >
                                         <FaGithub className="mr-2" />
@@ -187,6 +190,7 @@ export default function Portfolio() {
                                     </a>
                                     <a
                                         href={project.live}
+                                        target="_blank"
                                         className="flex items-center text-green-400"
                                     >
                                         <FaLink className="mr-2" />
