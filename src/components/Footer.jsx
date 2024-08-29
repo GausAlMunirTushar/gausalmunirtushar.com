@@ -10,7 +10,8 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-tertiary text-white py-8 px-6 flex flex-col md:flex-row items-center justify-between">
+    <footer className="bg-tertiary text-white ">
+      <div className="container py-8 flex flex-col md:flex-row items-center justify-between">
       <div className="flex flex-wrap justify-center space-x-3 mb-4 md:mb-0 md:px-4">
         {languages.map((lang) => (
           <button
@@ -32,6 +33,7 @@ const Footer = () => {
         >
           ▲
         </button>
+      </div>
       </div>
     </footer>
   );

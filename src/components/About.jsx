@@ -3,7 +3,7 @@ import Title from './Title';
 
 export default function About() {
     return (
-        <div className=" text-white min-h-screen flex flex-col justify-center items-center">
+        <div className=" text-white flex flex-col justify-center items-center">
             <div className="container mx-auto flex flex-col md:flex-row items-center px-6 md:px-4 py-20">
                 <div className="md:w-2/3 ">
                     <p className="text-lg mb-8 leading-[35px]">
