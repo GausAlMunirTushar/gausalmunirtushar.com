@@ -219,12 +219,13 @@ const Skill = () => {
             {/* Category Navigation */}
             <div className="container mx-auto px-4 py-16">
             <h2 className="text-3xl font-semibold mb-8">Skills</h2>
-            <div className="flex space-x-4 mb-4">
+            <div className="flex flex-wrap gap-3 md:gap-4 mb-4">
+            
                 {Object.keys(categories).map((category) => (
                     <button
                         key={category}
                         onClick={() => setSelectedCategory(category)}
-                        className={`py-2 px-4 rounded ${
+                        className={`py-2 px-3 sm:px-4 rounded text-md sm:text-lg ${
                             selectedCategory === category
                                 ? 'bg-primary text-white '
                                 : 'border-2 border-primary text-white hover:bg-tertiary'
@@ -236,26 +237,18 @@ const Skill = () => {
             </div>
 
             {/* Skills Section */}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 justify-center gap-6">
                 {categories[selectedCategory].map((skill, index) => (
                     <div
                         key={index}
-                        className="bg-gray-800 p-4 rounded-lg flex items-center space-x-4"
+                        className="bg-gray-800 px-3 sm:px-4 py-4 rounded-lg flex items-center space-x-4"
                     >
-                        <div className="text-4xl">{skill.icon}</div>
+                        <div className="text-2xl sm:text-4xl">{skill.icon}</div>
                         <div className="flex-1">
-                            <div className="text-lg font-semibold">
+                            <div className="text-sm sm:text-md md:text-lg md:font-semibold">
                                 {skill.name}
                             </div>
-                            {/* Skill progress bar */}
-                            {/* <div className="w-full bg-gray-700 rounded-full h-2 mt-2">
-                <div
-                  className="bg-green-500 h-2 rounded-full"
-                  style={{ width: `${skill.percentage}%` }}
-                ></div>
-              </div> */}
                         </div>
-                        {/* <div className="text-green-500 font-bold">{skill.percentage}%</div> */}
                     </div>
                 ))}
             </div>
