@@ -37,10 +37,10 @@ const projects = {
         {
             title: 'Edushare',
             description: 'We designed Connections Academy to give students all across the nation a tuition-free online public school that lets them learn.',
-            tags: ['react', 'nextjs', 'css', 'tailwindcss'],
+            tags: ['react', 'nextjs', 'tailwindcss'],
             image: '/images/portfolio/edushare-2.png',
-            github: '#',
-            live: '#',
+            github: 'https://github.com/GausAlMunirTushar/edushare',
+            live: 'https://tushar-edushare.netlify.app/',
         },
         {
             title: 'Furniro',
@@ -115,6 +115,14 @@ const projects = {
             description: 'Description for other project 1.',
             tags: ['python', 'flask', 'sqlalchemy'],
             image: '/images/portfolio/pebisnis-2.png',
+            github: '#',
+            live: '#',
+        },
+        {
+            title: 'Plantify',
+            description: 'Description for other project 1.',
+            tags: ['HTML', 'CSS', 'JavaScript'],
+            image: '/images/portfolio/plantify.png',
             github: '#',
             live: '#',
         },

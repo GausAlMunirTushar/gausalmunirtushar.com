@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Title from './Title';
 
 export default function About() {
     return (
@@ -33,6 +34,17 @@ export default function About() {
                         className="rounded-lg"
                     />
                 </div>
+                <Title
+                title="My Skills"
+                lineHeight="8rem"
+                lineColor="#ffffff"
+                lineRotation="0deg" // No rotation
+                bgColor="bg-tertiary"
+                textColor="text-gray-200"
+                textRotation="rotate-0 sm:-rotate-90"
+                fontSize="text-base"
+                textPosition="top"
+            />
             </div>
         </div>
     );

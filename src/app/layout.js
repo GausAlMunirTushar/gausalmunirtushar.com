@@ -13,6 +13,16 @@ export const metadata = {
                         the world. I have graduated with a bachelor's degree in
                         Computer Science Engineering from Northern University. I am available for any kind of
                         job opportunity that suits my interests.`,
+    keywords: "Gaus Al Munir Tushar, Software Engineer, Web Developer, গাউস আল মুনির তুষার, DevOps Practitoiner",
+    author: "Gaus Al Munir Tushar",
+    robots: "index, follow",
+    openGraph: {
+        title: "Gaus Al Munir Tushar | Software Engineer | Web Developer",
+        description: `Hello! I'm Gaus Al Munir Tushar, a passionate Software
+                        Engineer. I develop web applications, mobile`
+        
+    },
+    
 };
 
 export default function RootLayout({ children }) {

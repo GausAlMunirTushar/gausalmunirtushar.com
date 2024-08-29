@@ -27,7 +27,7 @@ const menu = [
 const Menu = () => {
     return (
         <nav>
-            <ul className="flex uppercase text-md space-x-7">
+            <ul className="flex items-center uppercase text-md space-x-7">
                 {menu.map((item, index) => (
                     <li key={index}>
                         <a
@@ -38,6 +38,7 @@ const Menu = () => {
                         </a>
                     </li>
                 ))}
+            <button className="border-2 border-primary text-white uppercase py-1.5 px-4 rounded">Resume</button>
             </ul>
         </nav>
     );

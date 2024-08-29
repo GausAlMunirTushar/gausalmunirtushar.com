@@ -30,39 +30,43 @@ import {
     SiPrometheus,
     SiTerraform,
     SiGrafana,
-    SiElastic,
-    SiLogstash,
+    SiPython,
+    SiSqlite,
+    SiExpress,
+    SiNestjs,
+    SiVuedotjs,
+    SiNuxtdotjs
 } from 'react-icons/si';
 
 const Skill = () => {
     // Define the categories with icons
     const categories = {
         Web: [
-            {
-                name: 'HTML',
-                percentage: 95,
-                icon: <FaHtml5 className="text-orange-500" />,
-            },
-            {
-                name: 'CSS',
-                percentage: 90,
-                icon: <FaCss3Alt className="text-blue-500" />,
-            },
-            {
-                name: 'SCSS',
-                percentage: 85,
-                icon: <FaSass className="text-pink-500" />,
-            },
-            {
-                name: 'Tailwind CSS',
-                percentage: 80,
-                icon: <SiTailwindcss className="text-teal-500" />,
-            },
-            {
-                name: 'Bootstrap',
-                percentage: 85,
-                icon: <FaBootstrap className="text-purple-600" />,
-            },
+            // {
+            //     name: 'HTML',
+            //     percentage: 95,
+            //     icon: <FaHtml5 className="text-orange-500" />,
+            // },
+            // {
+            //     name: 'CSS',
+            //     percentage: 90,
+            //     icon: <FaCss3Alt className="text-blue-500" />,
+            // },
+            // {
+            //     name: 'SCSS',
+            //     percentage: 85,
+            //     icon: <FaSass className="text-pink-500" />,
+            // },
+            // {
+            //     name: 'Tailwind CSS',
+            //     percentage: 80,
+            //     icon: <SiTailwindcss className="text-teal-500" />,
+            // },
+            // {
+            //     name: 'Bootstrap',
+            //     percentage: 85,
+            //     icon: <FaBootstrap className="text-purple-600" />,
+            // },
             {
                 name: 'React',
                 percentage: 90,
@@ -83,6 +87,26 @@ const Skill = () => {
                 percentage: 80,
                 icon: <FaNodeJs className="text-green-500" />,
             },
+            {
+                name: 'Express.js',
+                percentage: 85,
+                icon: <SiExpress className="text-gray-400" />,
+            },
+            {
+                name: 'NestJS',
+                percentage: 80,
+                icon: <SiNestjs className="text-red-500" />,
+            },
+            // {
+            //     name: 'Vue.js',
+            //     percentage: 80,
+            //     icon: <SiVuedotjs className="text-green-400" />,
+            // },
+            // {
+            //     name: 'Nuxt.js',
+            //     percentage: 75,
+            //     icon: <SiNuxtdotjs className="text-green-500" />,
+            // },
         ],
         Programming: [
             {
@@ -94,6 +118,16 @@ const Skill = () => {
                 name: 'TypeScript',
                 percentage: 85,
                 icon: <SiTypescript className="text-blue-500" />,
+            },
+            {
+                name: 'Python',
+                percentage: 80,
+                icon: <SiPython className="text-yellow-500" />,
+            },
+            {
+                name: 'SQL',
+                percentage: 75,
+                icon: <SiSqlite  className="text-blue-700" />,
             },
         ],
         Databases: [
@@ -173,26 +207,6 @@ const Skill = () => {
         name: 'Grafana',
         percentage: 65,
         icon: <SiGrafana className="text-orange-500" />,
-    },
-    {
-        name: 'ElasticSearch',
-        percentage: 60,
-        icon: <SiElastic className="text-blue-400" />,
-    },
-    {
-        name: 'Logstash',
-        percentage: 55,
-        icon: <SiLogstash className="text-green-600" />,
-    },
-    {
-        name: 'Filebeat',
-        percentage: 55,
-        icon: <SiElastic className="text-blue-400" />,
-    },
-    {
-        name: 'Apache Kafka',
-        percentage: 60,
-        icon: <SiApachekafka className="text-black" />,
     },
 ],
 

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Menu from './Menu'; // Assuming Menu is in the same directory
+import Menu from './Menu';
 
 
 
@@ -11,7 +11,6 @@ const Header = () => {
             </div>
             <div className="flex items-center gap-5">
                 <Menu />
-                <button className="border-2 border-primary text-white uppercase py-1.5 px-4 rounded">Resume</button>
             </div>
         </header>
     );
