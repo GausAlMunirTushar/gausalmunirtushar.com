@@ -9,7 +9,7 @@ import {
     FaBootstrap,
     FaGitAlt,
     FaDocker,
-    FaGithubAlt
+    FaGithubAlt,
 } from 'react-icons/fa';
 import {
     SiNextdotjs,
@@ -35,7 +35,10 @@ import {
     SiExpress,
     SiNestjs,
     SiVuedotjs,
-    SiNuxtdotjs
+    SiNuxtdotjs,
+    SiMongoose,
+    SiPrisma,
+    SiSequelize,
 } from 'react-icons/si';
 
 const Skill = () => {
@@ -97,6 +100,21 @@ const Skill = () => {
                 percentage: 80,
                 icon: <SiNestjs className="text-red-500" />,
             },
+            {
+                name: 'Mongoose',
+                percentage: 85,
+                icon: <SiMongoose className="text-red-500" />,
+            },
+            {
+                name: 'Prisma',
+                percentage: 80,
+                icon: <SiPrisma className="text-blue-500" />,
+            },
+            {
+                name: 'Sequelize',
+                percentage: 75,
+                icon: <SiSequelize className="text-purple-500" />,
+            },
             // {
             //     name: 'Vue.js',
             //     percentage: 80,
@@ -127,7 +145,7 @@ const Skill = () => {
             {
                 name: 'SQL',
                 percentage: 75,
-                icon: <SiSqlite  className="text-blue-700" />,
+                icon: <SiSqlite className="text-blue-700" />,
             },
         ],
         Databases: [
@@ -152,64 +170,63 @@ const Skill = () => {
                 icon: <SiRedis className="text-red-500" />,
             },
         ],
-        'Tools': [
-    {
-        name: 'Git',
-        percentage: 95,
-        icon: <FaGitAlt className="text-orange-500" />,
-    },
-    {
-        name: 'Docker',
-        percentage: 80,
-        icon: <FaDocker className="text-blue-500" />,
-    },
-    {
-        name: 'Linux',
-        percentage: 85,
-        icon: <SiLinux className="text-yellow-500" />,
-    },
-    {
-        name: 'Kubernetes',
-        percentage: 70,
-        icon: <SiKubernetes className="text-blue-500" />,
-    },
-    {
-        name: 'GitHub Actions',
-        percentage: 75,
-        icon: <FaGithubAlt className="text-black" />,
-    },
-    {
-        name: 'Nginx',
-        percentage: 75,
-        icon: <SiNginx className="text-green-500" />,
-    },
-    {
-        name: 'Ansible',
-        percentage: 70,
-        icon: <SiAnsible className="text-red-500" />,
-    },
-    {
-        name: 'Terraform',
-        percentage: 65,
-        icon: <SiTerraform className="text-purple-500" />,
-    },
-    {
-        name: 'Jenkins',
-        percentage: 70,
-        icon: <SiJenkins className="text-blue-600" />,
-    },
-    {
-        name: 'Prometheus',
-        percentage: 60,
-        icon: <SiPrometheus className="text-orange-600" />,
-    },
-    {
-        name: 'Grafana',
-        percentage: 65,
-        icon: <SiGrafana className="text-orange-500" />,
-    },
-],
-
+        Tools: [
+            {
+                name: 'Git',
+                percentage: 95,
+                icon: <FaGitAlt className="text-orange-500" />,
+            },
+            {
+                name: 'Docker',
+                percentage: 80,
+                icon: <FaDocker className="text-blue-500" />,
+            },
+            {
+                name: 'Linux',
+                percentage: 85,
+                icon: <SiLinux className="text-yellow-500" />,
+            },
+            {
+                name: 'Kubernetes',
+                percentage: 70,
+                icon: <SiKubernetes className="text-blue-500" />,
+            },
+            {
+                name: 'GitHub Actions',
+                percentage: 75,
+                icon: <FaGithubAlt className="text-black" />,
+            },
+            {
+                name: 'Nginx',
+                percentage: 75,
+                icon: <SiNginx className="text-green-500" />,
+            },
+            {
+                name: 'Ansible',
+                percentage: 70,
+                icon: <SiAnsible className="text-red-500" />,
+            },
+            {
+                name: 'Terraform',
+                percentage: 65,
+                icon: <SiTerraform className="text-purple-500" />,
+            },
+            {
+                name: 'Jenkins',
+                percentage: 70,
+                icon: <SiJenkins className="text-blue-600" />,
+            },
+            {
+                name: 'Prometheus',
+                percentage: 60,
+                icon: <SiPrometheus className="text-orange-600" />,
+            },
+            {
+                name: 'Grafana',
+                percentage: 65,
+                icon: <SiGrafana className="text-orange-500" />,
+            },
+        ],
     };
 
     const [selectedCategory, setSelectedCategory] = useState('Web');
@@ -218,40 +235,43 @@ const Skill = () => {
         <div className=" text-white p-6">
             {/* Category Navigation */}
             <div className="container mx-auto px-4 py-16">
-            <h2 className="text-3xl font-semibold mb-8">Skills</h2>
-            <div className="flex flex-wrap gap-3 md:gap-4 mb-4">
-            
-                {Object.keys(categories).map((category) => (
-                    <button
-                        key={category}
-                        onClick={() => setSelectedCategory(category)}
-                        className={`py-2 px-3 sm:px-4 rounded text-md sm:text-lg ${
-                            selectedCategory === category
-                                ? 'bg-primary text-white '
-                                : 'border-2 border-primary text-white hover:bg-tertiary'
-                        }`}
-                    >
-                        {category}
-                    </button>
-                ))}
-            </div>
+                <h2 className="text-3xl font-semibold mb-8">Skills</h2>
+                <div className="flex flex-wrap gap-3 md:gap-4 mb-4">
+                    {Object.keys(categories).map((category) => (
+                        <button
+                            key={category}
+                            onClick={() => setSelectedCategory(category)}
+                            className={`py-2 px-3 sm:px-4 rounded text-md sm:text-lg ${
+                                selectedCategory === category
+                                    ? 'bg-primary text-white '
+                                    : 'border-2 border-primary text-white hover:bg-tertiary'
+                            }`}
+                            aria-pressed={selectedCategory === category}
+                        >
+                            {category}
+                        </button>
+                    ))}
+                </div>
 
-            {/* Skills Section */}
-            <div className="grid grid-cols-2 md:grid-cols-4 justify-center gap-6">
-                {categories[selectedCategory].map((skill, index) => (
-                    <div
-                        key={index}
-                        className="bg-gray-800 px-3 sm:px-4 py-4 rounded-lg flex items-center space-x-4"
-                    >
-                        <div className="text-2xl sm:text-4xl">{skill.icon}</div>
-                        <div className="flex-1">
-                            <div className="text-sm sm:text-md md:text-lg md:font-semibold">
-                                {skill.name}
+                {/* Skills Section */}
+                <div className="grid grid-cols-2 md:grid-cols-4 justify-center gap-6">
+                    {categories[selectedCategory].map((skill, index) => (
+                        <div
+                            key={index}
+                            className="bg-gray-800 px-3 sm:px-4 py-4 rounded-lg flex items-center space-x-4"
+                            role="listitem"
+                        >
+                            <div className="text-2xl sm:text-4xl">
+                                {skill.icon}
+                            </div>
+                            <div className="flex-1">
+                                <div className="text-sm sm:text-md md:text-lg md:font-semibold">
+                                    {skill.name}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                ))}
-            </div>
+                    ))}
+                </div>
             </div>
         </div>
     );
