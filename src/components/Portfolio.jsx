@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
 import { FaGithub, FaLink } from 'react-icons/fa';
 
@@ -27,7 +28,7 @@ const projects = {
             title: 'JobHuntly',
             description:
                 'Learn Practical use case of JavaScript in your everyday life, entirely in Bengali',
-            tags: ['Nodejs', 'Expressjs', 'MongoDB',],
+            tags: ['Nodejs', 'Expressjs', 'MongoDB'],
             image: '/images/portfolio/jobhuntly.png',
             github: '#',
             live: '#',
@@ -36,7 +37,8 @@ const projects = {
     frontend: [
         {
             title: 'Edushare',
-            description: 'We designed Connections Academy to give students all across the nation a tuition-free online public school that lets them learn.',
+            description:
+                'We designed Connections Academy to give students all across the nation a tuition-free online public school that lets them learn.',
             tags: ['react', 'nextjs', 'tailwindcss'],
             image: '/images/portfolio/edushare-2.png',
             github: 'https://github.com/GausAlMunirTushar/edushare',
@@ -44,7 +46,8 @@ const projects = {
         },
         {
             title: 'Furniro',
-            description: 'Furniro is a sleek e-commerce site offering a variety of stylish furniture with easy navigation, detailed product pages, and secure checkout. ',
+            description:
+                'Furniro is a sleek e-commerce site offering a variety of stylish furniture with easy navigation, detailed product pages, and secure checkout. ',
             tags: ['react', 'redux', 'css'],
             image: '/images/portfolio/furniro-2.png',
             github: '#',
@@ -86,7 +89,8 @@ const projects = {
     backend: [
         {
             title: 'Blog Application API',
-            description: 'A Blog Application API backend facilitates secure user authentication, dynamic content management, and seamless CRUD operations with efficient database handling and RESTful architecture..',
+            description:
+                'A Blog Application API backend facilitates secure user authentication, dynamic content management, and seamless CRUD operations with efficient database handling and RESTful architecture..',
             tags: ['node.js', 'express', 'mongodb'],
             image: '/images/portfolio/blog-api.png',
             github: '#',
@@ -107,7 +111,7 @@ const projects = {
             image: '/images/portfolio/doit.png',
             github: '#',
             live: '#',
-        }
+        },
     ],
     Others: [
         {
@@ -142,6 +146,7 @@ export default function Portfolio() {
                         <button
                             key={category}
                             onClick={() => setActiveTab(category)}
+                            aria-label={`Show ${category} projects`}
                             className={`px-4 py-2 rounded capitalize ${
                                 activeTab === category
                                     ? 'bg-primary text-white'
@@ -161,14 +166,15 @@ export default function Portfolio() {
                         >
                             {project.image && (
                                 <div className="project-image">
-                                <Image
-                                    src={project.image}
-                                    alt={project.title}
-                                    className="w-full object-cover"
-                                    width={500}
-                                    height={300}
-                                />
-                            </div>
+                                    <Image
+                                        src={project.image}
+                                        alt={project.title}
+                                        className="w-full object-cover"
+                                        width={500}
+                                        height={300}
+                                        loading="lazy"
+                                    />
+                                </div>
                             )}
                             <div className="p-6">
                                 <h3 className="text-xl font-semibold mb-2">
@@ -188,22 +194,26 @@ export default function Portfolio() {
                                     ))}
                                 </div>
                                 <div className="flex items-end justify-between">
-                                    <a
+                                    <Link
                                         href={project.github}
                                         target="_blank"
+                                        aria-label={`View ${project.title} on GitHub`}
                                         className="flex items-center text-green-400"
+                                        rel="noopener noreferrer"
                                     >
                                         <FaGithub className="mr-2" />
                                         GitHub
-                                    </a>
-                                    <a
+                                    </Link>
+                                    <Link
                                         href={project.live}
                                         target="_blank"
+                                        aria-label={`View live demo of ${project.title}`}
                                         className="flex items-center text-green-400"
+                                        rel="noopener noreferrer"
                                     >
                                         <FaLink className="mr-2" />
                                         Live Demo
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
