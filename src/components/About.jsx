@@ -3,7 +3,7 @@ import Title from './Title';
 
 export default function About() {
     return (
-        <div className=" text-white flex flex-col justify-center items-center">
+        <section  className=" text-white flex flex-col justify-center items-center">
             <div className="container mx-auto flex flex-col md:flex-row items-center px-6 md:px-4 py-20">
                 <div className="md:w-2/3 ">
                     <p className="text-lg mb-8 leading-[35px]">
@@ -17,11 +17,15 @@ export default function About() {
                         job opportunity that suits my interests.`}
                     </p>
                     <div className="flex mt-6 space-x-4">
-                        <button className="bg-primary text-white px-6 py-2 rounded">
-                            Get Resume
+                        <button className="bg-primary text-white px-6 py-2 rounded"
+                        aria-label="Download Resume"
+                        >
+                            Experience
                         </button>
-                        <button className="border-2 border-primary text-white px-6 py-2 rounded">
-                            About Me
+                        <button className="border-2 border-primary text-white px-6 py-2 rounded"
+                        aria-label="Learn more my skills"
+                        >
+                           My Skills
                         </button>
                     </div>
                 </div>
@@ -32,13 +36,14 @@ export default function About() {
                         width={300}
                         height={400}
                         className="rounded-lg"
+                        priority
                     />
                 </div>
                 <Title
                 title="My Skills"
                 lineHeight="8rem"
                 lineColor="#ffffff"
-                lineRotation="0deg" // No rotation
+                lineRotation="0deg" 
                 bgColor="bg-tertiary"
                 textColor="text-gray-200"
                 textRotation="rotate-0 sm:-rotate-90"
@@ -46,6 +51,6 @@ export default function About() {
                 textPosition="top"
             />
             </div>
-        </div>
+        </section>
     );
 }
