@@ -7,16 +7,32 @@ const Hero = () => {
         <section className="container flex md:flex-row items-center py-8 text-white">
             <div className="hidden md:flex flex-col items-center mt-6 md:mt-0">
                 <div className="flex flex-col items-center space-y-4">
-                    <Link href="https://github.com/gausalmunirtushar" className="text-white">
+                    <Link
+                        href="https://github.com/gausalmunirtushar"
+                        className="text-white"
+                        aria-label="Github Profile"
+                    >
                         <FaGithub size={20} />
                     </Link>
-                    <Link href="https://www.linkedin.com/in/gausalmunirtushar" className="text-white">
+                    <Link
+                        href="https://www.linkedin.com/in/gausalmunirtushar"
+                        className="text-white"
+                        aria-label="LinkedIn Profile"
+                    >
                         <FaLinkedin size={20} />
                     </Link>
-                    <Link href="https://medium.com/@gausalmunirtushar" className="text-white">
+                    <Link
+                        href="https://medium.com/@gausalmunirtushar"
+                        className="text-white"
+                        aria-label="Medium Profile"
+                    >
                         <FaMedium size={20} />
                     </Link>
-                    <Link href="https://twitter.com/gausalmunir" className="text-white">
+                    <Link
+                        href="https://twitter.com/gausalmunir"
+                        className="text-white"
+                        aria-label="Twitter Profile"
+                    >
                         <FaTwitter size={20} />
                     </Link>
                 </div>
@@ -28,7 +44,9 @@ const Hero = () => {
                 </div>
             </div>
             <div className="flex flex-col items-center sm:items-start">
-                <h1 className="text-xl font-semibold text-primary">Hello! I am</h1>
+                <h1 className="text-xl font-semibold text-primary">
+                    Hello! I am
+                </h1>
                 <h2 className="text-3xl sm:text-5xl md:text-7xl font-extrabold mt-2">
                     Gaus Al Munir Tushar
                 </h2>
@@ -36,7 +54,10 @@ const Hero = () => {
                     Software Engineer
                 </p>
                 <p className="text-gray-200 text-center">
-                    Full Stack Developer <span className="text-primary text-xl">•</span> JavaScript Stack <span className="text-primary text-xl">•</span> DevOps Practitioner
+                    Full Stack Developer{' '}
+                    <span className="text-primary text-xl">•</span> JavaScript
+                    Stack <span className="text-primary text-xl">•</span> DevOps
+                    Practitioner
                 </p>
                 <div className="flex sm:items-center mt-6 space-x-4">
                     <button className="bg-primary text-white px-6 py-2 rounded">
