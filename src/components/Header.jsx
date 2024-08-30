@@ -19,7 +19,7 @@ const Header = () => {
                 <div className="hidden md:flex items-center gap-5">
                     <Menu />
                 </div>
-
+                
                 {/* Mobile Menu Button */}
                 <button 
                     className="md:hidden text-white bg-primary py-2 px-3 rounded hover:bg-green-500 transition-colors"

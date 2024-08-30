@@ -2,6 +2,7 @@ import Link from "next/link";
 
 const menu = [
     { name: 'About', href: '#about' },
+    { name: 'Experience', href: '#experience' },
     { name: 'Skill', href: '#skill' },
     { name: 'Portfolio', href: '#portfolio' },
     { name: 'Contact', href: '#contact' },
