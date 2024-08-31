@@ -232,9 +232,9 @@ const Skill = () => {
     const [selectedCategory, setSelectedCategory] = useState('Web');
 
     return (
-        <div className=" text-white p-6">
+        <>
             {/* Category Navigation */}
-            <div className="container mx-auto px-4 py-16">
+            <div className="container px-4 py-10 sm:py-16 text-white">
                 <h2 className="text-3xl font-semibold mb-8">Skills</h2>
                 <div className="flex flex-wrap gap-3 md:gap-4 mb-4">
                     {Object.keys(categories).map((category) => (
@@ -258,7 +258,7 @@ const Skill = () => {
                     {categories[selectedCategory].map((skill, index) => (
                         <div
                             key={index}
-                            className="bg-gray-800 px-3 sm:px-4 py-4 rounded-lg flex items-center space-x-4"
+                            className="bg-tertiary px-3 sm:px-4 py-4 rounded-lg flex items-center space-x-4"
                             role="listitem"
                         >
                             <div className="text-2xl sm:text-4xl">
@@ -273,7 +273,7 @@ const Skill = () => {
                     ))}
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 

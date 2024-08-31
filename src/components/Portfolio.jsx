@@ -138,16 +138,16 @@ export default function Portfolio() {
     const [activeTab, setActiveTab] = useState('web app');
 
     return (
-        <section className=" text-white py-20">
+        <section className=" text-white py-10 sm:py-20">
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl font-semibold mb-8">Portfolio</h2>
-                <div className="flex space-x-4 mb-8">
+                <div className="flex flex-wrap gap-3 mb-8">
                     {Object.keys(projects).map((category) => (
                         <button
                             key={category}
                             onClick={() => setActiveTab(category)}
                             aria-label={`Show ${category} projects`}
-                            className={`px-4 py-2 rounded capitalize ${
+                            className={`px-5 py-2 sm:px-4 sm:py-2 rounded capitalize ${
                                 activeTab === category
                                     ? 'bg-primary text-white'
                                     : 'border-2 border-primary text-white hover:bg-tertiary'
@@ -162,7 +162,7 @@ export default function Portfolio() {
                     {projects[activeTab].map((project, index) => (
                         <div
                             key={index}
-                            className="bg-gray-800 rounded-lg overflow-hidden shadow-lg"
+                            className="bg-tertiary rounded-lg overflow-hidden shadow-lg"
                         >
                             {project.image && (
                                 <div className="project-image">

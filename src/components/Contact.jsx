@@ -46,7 +46,7 @@ export default function Contact() {
     };
 
     return (
-        <div className="text-white py-20">
+        <div className="text-white py-10 sm:py-20">
             <div className="container mx-auto flex flex-col gap-6 md:flex-row justify-between items-start px-4 md:px-6">
                 <section className="md:w-1/2 mb-6 md:mb-0">
                     <p className="text-lg mb-6">

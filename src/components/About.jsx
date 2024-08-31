@@ -4,7 +4,7 @@ import Title from './Title';
 export default function About() {
     return (
         <section  className=" text-white flex flex-col justify-center items-center">
-            <div className="container mx-auto flex flex-col md:flex-row items-center px-6 md:px-4 py-20">
+            <div className="container mx-auto flex flex-col md:flex-row items-center px-6 md:px-4 py-10 sm:py-20">
                 <div className="md:w-2/3 ">
                     <p className="text-lg mb-8 leading-[35px]">
                         {`Hello! I'm Gaus Al Munir Tushar, a passionate Software
@@ -16,7 +16,7 @@ export default function About() {
                         Computer Science Engineering from Northern University. I am available for any kind of
                         job opportunity that suits my interests.`}
                     </p>
-                    <div className="flex mt-6 space-x-4">
+                    <div className="flex mt-6 justify-center sm:justify-start space-x-4">
                         <button className="bg-primary text-white px-6 py-2 rounded"
                         aria-label="Download Resume"
                         >
@@ -39,17 +39,6 @@ export default function About() {
                         priority
                     />
                 </div>
-                <Title
-                title="My Skills"
-                lineHeight="8rem"
-                lineColor="#ffffff"
-                lineRotation="0deg" 
-                bgColor="bg-tertiary"
-                textColor="text-gray-200"
-                textRotation="rotate-0 sm:-rotate-90"
-                fontSize="text-base"
-                textPosition="top"
-            />
             </div>
         </section>
     );
