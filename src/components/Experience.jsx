@@ -3,10 +3,10 @@ import { FaCode, FaBuilding } from 'react-icons/fa';
 // Experience data
 const experiences = [
     {
-        company: 'Jumatechs',
-        title: 'Backend Developer Intern',
-        location: 'Remote',
-        duration: 'June 2023 - Present',
+        company: 'Texon Limited',
+        title: 'Software Engineer',
+        location: 'Dhaka, Bangladesh',
+        duration: 'May 2024 - Present',
         responsibilities: [
             'Developed RESTful APIs using Node.js and Express.js.',
             'Implemented authentication and authorization with JWT.',
@@ -15,10 +15,10 @@ const experiences = [
         technologies: ['Node.js', 'Express.js', 'PostgreSQL', 'JWT'],
     },
     {
-        company: 'XYZ Corp',
-        title: 'Junior Software Engineer',
+        company: 'e Learning and Earning Ltd',
+        title: 'Full Stack Developer',
         location: 'Dhaka, Bangladesh',
-        duration: 'Jan 2022 - May 2023',
+        duration: 'August 2023 - July 2024',
         responsibilities: [
             'Led the development of a doctor management system using React and Node.js.',
             'Integrated third-party services for enhanced user experience.',
