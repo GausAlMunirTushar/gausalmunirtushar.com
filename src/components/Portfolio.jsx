@@ -7,6 +7,15 @@ import { FaGithub, FaLink } from 'react-icons/fa';
 const projects = {
     'web app': [
         {
+            title: 'Design Skills BD',
+            description:
+                'Education website · Computer training school · E-commerce website',
+            tags: ['node.js', 'express.js', 'mongodb', 'nextjs'],
+            image: '/images/portfolio/designskillsbd.png',
+            github: '#',
+            live: 'https://designskillsbd.com',
+        },
+        {
             title: 'Daktarbari',
             description:
                 'A Collection of free Multicolor CSS, JPG, PNG, SVG Gradients with a Gradienta Editor',
