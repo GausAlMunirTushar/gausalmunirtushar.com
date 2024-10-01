@@ -26,17 +26,18 @@
   
   /* Scrollbar Track */
   ::-webkit-scrollbar-track {
-    background-color: #111A28; /* Background color of the track */
+    background-color: #1D293A; /* Background color of the track */
   }
   
   /* Scrollbar Thumb */
   ::-webkit-scrollbar-thumb {
-    background-color: #1D293A; /* Color of the scrollbar thumb */
-    border-radius: 6px; /* Rounded corners */
+    background-color: #111A28; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners */
+    /* border: 2px solid #1D293A; */
   }
   
   /* Scrollbar Thumb on Hover */
   ::-webkit-scrollbar-thumb:hover {
-    background-color: #1D293A; /* Change color when hovering */
+    background-color: #111A28; /* Change color when hovering */
   }
   
