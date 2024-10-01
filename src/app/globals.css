@@ -18,3 +18,25 @@
 .project-image:hover img {
     transform: translateY(-50%); /* Scroll the image up on hover */
 }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+  
+  /* Scrollbar Track */
+  ::-webkit-scrollbar-track {
+    background-color: #111A28; /* Background color of the track */
+  }
+  
+  /* Scrollbar Thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: #1D293A; /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners */
+  }
+  
+  /* Scrollbar Thumb on Hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #1D293A; /* Change color when hovering */
+  }
+  

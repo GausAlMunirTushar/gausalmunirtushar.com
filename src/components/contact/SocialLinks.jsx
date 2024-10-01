@@ -6,7 +6,7 @@ export default function SocialLinks() {
     { href: 'https://github.com/GausAlMunirTushar', icon: <FaGithub size={20} />, label: 'GitHub' },
     { href: 'https://www.linkedin.com/in/GausAlMunirTushar', icon: <FaLinkedin size={20} />, label: 'LinkedIn' },
     { href: 'https://leetcode.com/GausAlMunirTushar', icon: <SiLeetcode size={20} />, label: 'LeetCode' },
-    { href: 'https://blog.gausalmunirtushar.xyz', icon: <FaBlog size={20} />, label: 'Blog' },
+    { href: 'https://blog.gausalmunir.xyz', icon: <FaBlog size={20} />, label: 'Blog' },
     { href: 'https://twitter.com/GausAlMunir', icon: <FaTwitter size={20} />, label: 'Twitter' },
     { href: 'https://facebook.com/GausAlMunirTusharProfile', icon: <FaFacebook size={20} />, label: 'Facebook' },
     { href: 'https://youtube.com/GausAlMunirTushar', icon: <FaYoutube size={20} />, label: 'YouTube' },

@@ -6,7 +6,7 @@ const menu = [
     { name: 'Skill', href: '#skill' },
     { name: 'Portfolio', href: '#portfolio' },
     { name: 'Contact', href: '#contact' },
-    { name: 'Blog', href: 'https://blog.gausalmunirtushar.xyz', target: '_blank' },
+    { name: 'Blog', href: 'https://blog.gausalmunir.xyz', target: '_blank' },
 ];
 
 const Menu = ({ mobile = false }) => {

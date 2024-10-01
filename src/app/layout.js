@@ -4,7 +4,7 @@ import './globals.css';
 const inter = Lato({ weight: ['400', '700'], subsets: ['latin'] });
 
 export const metadata = {
-    title: 'Gaus Al Munir Tushar | Software Engineer | Web Developer',
+    title: 'Gaus Al Munir Tushar | Software Engineer | DevOps Practitioner | Web Developer',
     description: `Hello! I'm Gaus Al Munir Tushar, a passionate Software
                         Engineer. I develop web applications, mobile
                         applications, and desktop applications. My core skill is
